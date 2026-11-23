@@ -1,0 +1,83 @@
+--device=/dev/ttyUSB0:/dev/ttyUSB0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base).
+-- Application: /workdir/rfid-zephyr-rtos
+-- CMake version: 3.28.3
+-- Found Python3: /opt/python/venv/bin/python3 (found suitable version "3.12.3", minimum required is "3.12") found components: Interpreter 
+-- Cache files will be written to: /root/.cache/zephyr
+-- Zephyr version: 4.4.99 (/workdir/zephyrproject/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: rpi_pico, qualifiers: rp2040
+-- Found host-tools: zephyr 1.0.1 (/opt/toolchains/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (/opt/toolchains/zephyr-sdk-1.0.1)
+-- Found Dtc: /opt/toolchains/zephyr-sdk-1.0.1/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.7.0", minimum required is "1.4.6") 
+-- Found BOARD.dts: /workdir/zephyrproject/zephyr/boards/raspberrypi/rpi_pico/rpi_pico.dts
+-- Generated zephyr.dts: /workdir/rfid-zephyr-rtos/build/zephyr/zephyr.dts
+-- Generated pickled edt: /workdir/rfid-zephyr-rtos/build/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /workdir/rfid-zephyr-rtos/build/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /workdir/zephyrproject/zephyr/Kconfig
+Loaded configuration '/workdir/zephyrproject/zephyr/boards/raspberrypi/rpi_pico/rpi_pico_defconfig'
+Merged configuration '/workdir/rfid-zephyr-rtos/prj.conf'
+Configuration saved to '/workdir/rfid-zephyr-rtos/build/zephyr/.config'
+Kconfig header saved to '/workdir/rfid-zephyr-rtos/build/zephyr/include/generated/zephyr/autoconf.h'
+-- Found Ccache: /usr/local/bin/ccache (found suitable version "4.13.2", minimum required is "4.12") 
+-- Found GnuLd: /opt/toolchains/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/arm-zephyr-eabi/bin/ld.bfd (found version "2.43.1") 
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /opt/toolchains/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+-- Using ccache: /usr/local/bin/ccache
+-- Found gen_kobject_list: /workdir/zephyrproject/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (6.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: /workdir/rfid-zephyr-rtos/build
+-- west build: building application
+[1/168] Preparing syscall dependency handling
+
+[7/168] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.4.99 (/workdir/zephyrproject/zephyr), build: v4.4.0-10213-gca0da250b5b1
+[8/168] Performing configure step for 'second_stage_bootloader'
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /opt/toolchains/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /opt/toolchains/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The ASM compiler identification is GNU
+-- Found assembler: /opt/toolchains/zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workdir/rfid-zephyr-rtos/build/bootloader
+[9/168] Performing build step for 'second_stage_bootloader'
+[1/2] Building ASM object CMakeFiles/boot_stage2.dir/workdir/zephyrproject/modules/hal/rpi_pico/src/rp2040/boot_stage2/boot2_w25q080.S.obj
+[2/2] Linking ASM executable boot_stage2
+[168/168] Linking C executable zephyr/zephyr.elf
+Memory region         Used Size  Region Size  %age Used
+      BOOT_FLASH:         256 B        256 B    100.00%
+           FLASH:       27844 B    2096896 B      1.33%
+             RAM:        6232 B       264 KB      2.31%
+        IDT_LIST:           0 B        32 KB      0.00%
+Generating files from /workdir/rfid-zephyr-rtos/build/zephyr/zephyr.elf for board: rpi_pico/rp2040
+Converted to uf2, output size: 56320, start address: 0x10000000
+Wrote 56320 bytes to zephyr.uf2
+root@35b33dbb8071:/workdir/rfid-zephyr-rtos# 

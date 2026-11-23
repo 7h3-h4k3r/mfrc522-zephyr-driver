@@ -1,0 +1,5 @@
+mainmenu "MFRC522 RFID Application"
+
+source "Kconfig.zephyr"
+
+rsource "drivers/mfrc522/Kconfig"

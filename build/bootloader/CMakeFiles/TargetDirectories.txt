@@ -1,0 +1,3 @@
+/workdir/rfid-zephyr-rtos/build/bootloader/CMakeFiles/boot_stage2.dir
+/workdir/rfid-zephyr-rtos/build/bootloader/CMakeFiles/edit_cache.dir
+/workdir/rfid-zephyr-rtos/build/bootloader/CMakeFiles/rebuild_cache.dir
